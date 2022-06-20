@@ -8,7 +8,7 @@
 
 Letakkan  dibagian bawah sebelum penutup HTML
 ```
-<script src="https://raw.githubusercontent.com/extenv/VanJS/main/dist/van.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/extenv/vanjs@main/dist/van.js"></script>
 ```
 
 ## Dokumentasi
