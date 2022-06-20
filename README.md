@@ -1,7 +1,7 @@
 
 > vanJS adalah templating css dengan javascript yang berguna untuk membuat design component website dengan cepat.
 
-> **DALAM PENGEMBANGAN**
+**DALAM PENGEMBANGAN**
 
 ## Install
 > Script instalasi sementara
@@ -13,14 +13,13 @@ Letakkan  dibagian bawah sebelum penutup HTML
 
 ## Dokumentasi
 
- -  **Membuat Button**
+ **Membuat Button**
  > Diwajibkan menggunakan id="van-button" untuk bekerja
 ```
 <button  id="van-button" themes="" imgsrc="" text=""></button>
 ```
 ***themes*** untuk  tema button, isi value dengan tema tersedia, kosongkan untuk default
-
- tema tersedia :
+ tema :
  - dark
  
 ***imgsrc*** untuk button dengan gambar, kosongkan untuk button tanpa gambar
