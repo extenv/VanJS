@@ -18,14 +18,13 @@ Letakkan  dibagian bawah sebelum penutup HTML
 ```
 <button  id="van-button" themes="" imgsrc="" text=""></button>
 ```
- >themes untuk  tema button, isi value dengan tema tersedia, kosongkan untuk default
-
- Themes :
+***themes*** untuk  tema button, isi value dengan tema tersedia, kosongkan untuk default
+ tema :
  - dark
  
-> imgsrc untuk button dengan gambar, kosongkan untuk button tanpa gambar
+***imgsrc*** untuk button dengan gambar, kosongkan untuk button tanpa gambar
 
-> text untuk mengisi judul button, jika dikosongkan akan menampilkan "Click Here"
+***text*** untuk mengisi judul button, jika dikosongkan akan menampilkan "Click Here"
 
 ---
 Tunggu update selanjutnya
