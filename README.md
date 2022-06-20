@@ -19,7 +19,8 @@ Letakkan  dibagian bawah sebelum penutup HTML
 <button  id="van-button" themes="" imgsrc="" text=""></button>
 ```
 ***themes*** untuk  tema button, isi value dengan tema tersedia, kosongkan untuk default
- tema :
+
+ tema tersedia :
  - dark
  
 ***imgsrc*** untuk button dengan gambar, kosongkan untuk button tanpa gambar
