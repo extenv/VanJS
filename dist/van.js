@@ -1,1 +1,71 @@
-let button=document.getElementById("button");if(button){"dark"==button.getAttribute("themes")?(button.setAttribute("style","\n    background-color: rgb(55 65 81) ; \n    color: rgb(249 250 251); \n    padding: 1rem;\n    border: 1px solid rgb(209 213 219); \n    font-size: 15px; \n    font-weight: bold; \n    display:flex; \n    justify-content: center;\n    align-items: center;\n    cursor: pointer; \n    border-radius: 0.375rem;\n    "),button.onmouseover=function(){button.style.color="rgb(243 244 246)",button.style.backgroundColor="rgb(31 41 55)"},button.onmouseout=function(){button.style.color="rgb(249 250 251)",button.style.backgroundColor="rgb(55 65 81)"}):(button.setAttribute("style","\n    background-color: rgb(249 250 251) ; \n    color: rgb(107 114 128); \n    padding: 1rem;\n    border: 1px solid rgb(209 213 219); \n    font-size: 15px; \n    font-weight: bold; \n    display:flex; \n    justify-content: center;\n    align-items: center;\n    cursor: pointer; \n    border-radius: 0.375rem;\n    "),button.onmouseover=function(){button.style.color="rgb(75 85 99)",button.style.backgroundColor="rgb(243 244 246)"},button.onmouseout=function(){button.style.color="rgb(107 114 128)",button.style.backgroundColor="rgb(249 250 251)"});let t=button.getAttribute("imgsrc");if(t){const n=document.createElement("img");n.src=t,n.setAttribute("style","margin-right:10px; width: 15px; height: 15px;"),button.appendChild(n)}let n=button.getAttribute("text");if(n){const t=document.createElement("div");t.innerHTML=n,button.appendChild(t)}else{const t=document.createElement("div");t.innerHTML="Click Here",button.appendChild(t)}}
+let button = document.getElementById("button")
+if(button){
+    let themes = button.getAttribute("themes")
+    if(themes == "dark"){
+    button.setAttribute("style", `
+    background-color: rgb(55 65 81) ; 
+    color: rgb(249 250 251); 
+    padding: 1rem;
+    border: 1px solid rgb(209 213 219); 
+    font-size: 15px; 
+    font-weight: bold; 
+    display:flex; 
+    justify-content: center;
+    align-items: center;
+    cursor: pointer; 
+    border-radius: 0.375rem;
+    `)
+    button.onmouseover = function() {
+        button.style.color = "rgb(243 244 246)";
+        button.style.backgroundColor = "rgb(31 41 55)";
+        };
+    button.onmouseout = function() {
+        button.style.color = "rgb(249 250 251)";
+        button.style.backgroundColor = "rgb(55 65 81)";
+        };
+    }else{
+    button.setAttribute("style", `
+    background-color: rgb(249 250 251) ; 
+    color: rgb(107 114 128); 
+    padding: 1rem;
+    border: 1px solid rgb(209 213 219); 
+    font-size: 15px; 
+    font-weight: bold; 
+    display:flex; 
+    justify-content: center;
+    align-items: center;
+    cursor: pointer; 
+    border-radius: 0.375rem;
+    `)
+    button.onmouseover = function() {
+        button.style.color = "rgb(75 85 99)";
+        button.style.backgroundColor = "rgb(243 244 246)";
+        };
+    button.onmouseout = function() {
+        button.style.color = "rgb(107 114 128)";
+        button.style.backgroundColor = "rgb(249 250 251)";
+        };
+    }
+      let imgsrc = button.getAttribute("imgsrc")
+      if(imgsrc){
+        const img = document.createElement("img");
+        img.src = imgsrc;
+        img.setAttribute(
+            "style",
+            "margin-right:10px; width: 15px; height: 15px;"
+            );
+         button.appendChild(img);
+      }
+      let text = button.getAttribute("text")
+      if(text){
+        const title = document.createElement("div");
+        title.innerHTML = text;
+        button.appendChild(title);
+      }else{
+        //Create Text
+        const title = document.createElement("div");
+        title.innerHTML = "Click Here";
+        button.appendChild(title);
+      }
+
+}
